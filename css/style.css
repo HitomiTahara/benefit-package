@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+
+/* common start-------------------------*/
+* {
+    font-family: "Ubuntu", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", YakuHanJP, YuGothic, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    background: #dedede;
+}
+
+table,
+tbody,
+tr,
+th,
+td {
+    width: 100%;
+    display: block;
+    text-align: left;
+}
+
+tr {
+    margin-bottom: 1em;
+}
+
+input {
+    padding: 2px;
+}
+
+/* common end -------------------------*/
+/* form start -------------------------*/
+
+/* form */
+
+.smile-content-form {
+    width: 80%;
+    max-width: 800px;
+    background: white;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+/* form ttl*/
+
+.smile-content-ttl {
+    text-align: center;
+}
+
+
+/* form txt bottomline */
+.gifter {
+    margin: 12px 0;
+    display: block;
+    position: relative;
+}
+
+.gifter::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    background-color: gainsboro;
+}
+
+/* form th*/
+
+.formtype__form__required {
+    color: white;
+    background: rgb(201, 93, 93);
+    padding: 2px 4px;
+    margin-left: 8px;
+    font-size: 12px;
+    border-radius: 4px;
+    vertical-align: text-bottom;
+}
+
+/* form td*/
+.email {
+    width: 60%;
+}
+
+.smile-content-img {
+    max-width: 200px;
+    width: 25%;
+    object-fit: contain;
+    margin: 8px;
+    border: solid 3px #fff;
+}
+
+input[type=radio]:checked+label .smile-content-img {
+    border: solid 3px #dadada;
+}
+
+.smile-category-img {
+    display: none;
+}
+
+.note {
+    font-size: 12px;
+}
+
+
+/* button */
+.submit {
+    padding: 4px 12px;
+    border: none;
+    color: white;
+    background: gray;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+
+.submit:hover {
+    background: #dadada;
+}
+
+/* form end -------------------------*/
